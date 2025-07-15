@@ -156,9 +156,7 @@ jobs:
           SCORE="${{ env.SCORE }}"
           JSON=$(jq -nc --arg timestamp "$TIMESTAMP" --arg repo "$REPO" --arg user "$USER" --arg level "$LEVEL" --arg score "$SCORE" \
             '{timestamp: $timestamp, repo: $repo, user: $user, level: $level, score: $score}')
-          curl -X POST "$SHEETBEST_URL" \
-            -H "Content-Type: application/json" \
-            -d "$JSON"
+          curl -X POST "$SHEETBEST_URL" -H "Content-Type: application/json" -d "$JSON"
 
       - name: 🏆 Fetch Global Leaderboard (SheetBest)
         env:
@@ -338,109 +336,6 @@ jobs:
           Banyak donghua yang memiliki komunitas penggemar yang sangat aktif.
           'A Will Eternal' dikenal dengan lelucon dan momen kocaknya.
           Konsep 'takdir abadi' adalah tujuan tertinggi bagi banyak kultivator.
-          Donghua seringkali menampilkan karakter dengan kekuatan yang terus meningkat seiring cerita.
-          Banyak donghua yang memiliki adaptasi dari manhua (komik Tiongkok).
-          Konsep 'Qi Deviation' adalah kondisi berbahaya bagi kultivator.
-          'The Founder of Diabolism' memiliki alur cerita yang kompleks dan karakter yang mendalam.
-          Beberapa donghua berfokus pada petualangan di dunia roh atau alam baka.
-          'Spirit Realm' menampilkan berbagai ras dan makhluk fantastis.
-          Konsep 'kultivasi ganda' sering melibatkan dua individu yang berlatih bersama.
-          'The Daily Life of the Immortal King' memparodikan banyak klise donghua.
-          Banyak donghua yang dianimasikan oleh studio-studio besar di Tiongkok.
-          'Throne of Seal' dikenal dengan pertarungan yang intens dan strategi.
-          Konsep 'Dao Heart' adalah fondasi mental seorang kultivator.
-          'Martial Universe' memiliki dunia yang luas dan penuh dengan bahaya.
-          Beberapa donghua menampilkan sistem 'guru-murid' yang kuat.
-          'Perfect World' memiliki visual yang memukau dan efek khusus yang canggih.
-          Konsep 'Heavenly Tribulation' adalah ujian yang harus dihadapi kultivator saat naik level.
-          'Swallowed Star' menggabungkan elemen sci-fi dengan kultivasi.
-          Banyak donghua yang memiliki cerita tentang pencarian harta karun atau warisan kuno.
-          'The Westward' adalah adaptasi modern dari kisah klasik 'Journey to the West'.
-          Konsep 'Divine Sense' memungkinkan kultivator untuk merasakan lingkungan mereka.
-          'Against the Sky Supreme' menampilkan protagonis yang sangat licik dan kuat.
-          Beberapa donghua berfokus pada pengembangan alkimia atau pembuatan jimat.
-          'Tales of Demons and Gods' menampilkan protagonis yang bereinkarnasi dengan pengetahuan masa depan.
-          Konsep 'spiritual beast' atau 'mythical beast' sering menjadi pendamping kultivator.
-          'Spirit Realm' memiliki alur cerita yang berpusat pada misteri identitas protagonis.
-          Banyak donghua yang dirilis di platform streaming seperti Bilibili dan Tencent Video.
-          'The Great Ruler' adalah bagian dari trilogi novel 'Heavenly Silkworm Potato'.
-          Konsep 'array' atau 'formasi' digunakan untuk melindungi tempat atau menjebak musuh.
-          'Wu Geng Ji' menampilkan konflik antara manusia dan dewa.
-          Beberapa donghua memiliki tema 'balas dendam' yang kuat.
-          'God of Martial Arts' menampilkan protagonis yang terus-menerus menghadapi tantangan.
-          Konsep 'kultivasi tubuh' berfokus pada penguatan fisik.
-          'The Daily Life of the Immortal King' adalah donghua yang sangat populer di kalangan remaja.
-          Banyak donghua yang memiliki adaptasi anime Jepang atau drama Korea.
-          'Renegade Immortal' dikenal karena alur ceritanya yang realistis dan brutal.
-          Konsep 'Dao Comprehension' adalah pemahaman mendalam tentang hukum alam semesta.
-          'A Record of a Mortal's Journey to Immortality' adalah salah satu donghua 3D paling realistis.
-          Beberapa donghua berfokus pada perjalanan panjang untuk menemukan kebenaran.
-          'Soul Land 2' melanjutkan kisah di dunia Tang Sect.
-          Konsep 'spiritual root' menentukan bakat alami seseorang dalam kultivasi.
-          'The King's Avatar' adalah salah satu donghua e-sport pertama yang sukses.
-          Banyak donghua yang menampilkan berbagai jenis energi spiritual selain Qi.
-          'Forty Millenniums of Cultivation' memiliki konsep kultivasi yang unik dalam latar sci-fi.
-          Konsep 'dimensi saku' atau 'ruang pribadi' sering dimiliki oleh kultivator kuat.
-          'Spare Me, Great Lord!' dikenal dengan humor sarkastiknya.
-          Beberapa donghua berfokus pada pengembangan seni bela diri kuno.
-          'Spirit Sword Sovereign' adalah donghua dengan tema reinkarnasi dan balas dendam.
-          Konsep 'karma' dapat mempengaruhi nasib karakter di sepanjang cerita.
-          'The Legend of Qin' adalah donghua dengan gaya seni yang sangat khas dan detail.
-          Banyak donghua yang menampilkan berbagai faksi atau sekte yang bersaing.
-          'Mo Dao Zu Shi' dikenal dengan alur cerita yang emosional dan kompleks.
-          Konsep 'demonic cultivation' adalah jalur kultivasi yang sering dianggap terlarang.
-          'Scissor Seven' memiliki gaya animasi yang unik dan cerita yang menyentuh.
-          Banyak donghua yang memiliki karakter pendukung yang kuat dan berkesan.
-          'The Founder of Diabolism' adalah salah satu donghua BL paling terkenal.
-          Konsep 'alam rahasia' sering berisi harta karun atau peluang kultivasi.
-          'Fog Hill of Five Elements' (Wushan Wuxing) dikenal dengan animasinya yang indah.
-          Beberapa donghua berfokus pada pengembangan keterampilan atau profesi tertentu.
-          'White Cat Legend' (Da Li Si Ri Zhi) adalah donghua misteri sejarah.
-          Konsep 'kultivasi ganda' atau 'pasangan kultivasi' kadang muncul.
-          'Link Click' (Shi Guang Dai Li Ren) adalah donghua dengan plot perjalanan waktu.
-          Banyak donghua yang memiliki alur cerita yang kompleks dan banyak karakter.
-          'The Legend of Exorcism' (Tian Bao Fu Yao Lu) adalah donghua fantasi.
-          Konsep 'kekuatan elemen' (api, air, tanah, angin, logam) sering digunakan.
-          'Cinderella Chef' (Meng Qi Shi Shen) adalah donghua romansa komedi.
-          Beberapa donghua menampilkan pertarungan skala besar atau perang antar faksi.
-          'Cupid's Chocolates' (Ai Shen Qiao Ke Li) adalah donghua romansa sekolah.
-          Konsep 'dunia persilatan' atau 'jianghu' adalah latar umum di donghua wuxia.
-          'Psychic Princess' (Tong Ling Fei) adalah donghua romantis fantasi.
-          Banyak donghua yang memiliki adaptasi drama live-action.
-          'Dragon Raja' (Long Zu) adalah donghua fantasi urban.
-          Konsep 'kultivasi iblis' atau 'jalur iblis' adalah alternatif dari kultivasi biasa.
-          'The Emperor's Strategy' (Di Wang Gong Lue) adalah donghua sejarah.
-          Beberapa donghua berfokus pada pengembangan teknologi atau penemuan.
-          'The Legend of Hei' adalah film donghua yang sangat sukses.
-          Konsep 'takdir' atau 'surga' sering menjadi kekuatan yang tak terhindarkan.
-          'Spiritpact' (Ling Qi) adalah donghua BL dengan tema spiritual.
-          Banyak donghua yang menampilkan sistem klan atau keluarga besar.
-          'The Outcast' (Yi Ren Zhi Xia) adalah donghua dengan elemen supernatural modern.
-          Konsep 'reinkarnasi' sering memberikan karakter kesempatan kedua.
-          'Rakshasa Street' (Zhen Hun Jie) adalah donghua aksi fantasi.
-          Beberapa donghua berfokus pada misteri kuno atau rahasia tersembunyi.
-          'The Legend of Luo Xiaohei' adalah nama lain untuk 'The Legend of Hei'.
-          Konsep 'transformasi binatang' atau 'bentuk beast' sering dimiliki oleh karakter.
-          'The Daily Life of the Immortal King' adalah donghua yang sangat ringan dan lucu.
-          Banyak donghua yang memiliki adegan pertarungan yang sangat dinamis.
-          'Heaven Official's Blessing' (Tian Guan Ci Fu) adalah donghua BL fantasi.
-          Konsep 'elixir' atau 'pil keabadian' adalah tujuan utama kultivator.
-          'The Chronologist' (Shi Guang Zai Ji) adalah donghua dengan plot unik.
-          Beberapa donghua menampilkan sistem 'poin' atau 'kontribusi' dalam sekte.
-          'The Memory of Chang'an' (Chang An Huan Jie) adalah donghua romansa sejarah.
-          Konsep 'penguasa' atau 'kaisar' sering menjadi figur sentral.
-          'The Indomitable' (Bu Ke Bu Sai) adalah donghua aksi.
-          Banyak donghua yang diadaptasi dari web novel populer.
-          'My Cultivator Girlfriend' (Wo de Xiu Xian Nu You) adalah donghua romansa urban.
-          Konsep 'jiwa' atau 'roh' adalah inti dari kultivasi.
-          'The Legend of Futian' (Fu Tian Ji) adalah donghua fantasi.
-          Beberapa donghua menampilkan berbagai jenis senjata, dari pedang hingga busur.
-          'Grandmaster of Demonic Cultivation' adalah salah satu donghua paling berpengaruh.
-          Konsep 'alam kultivasi' sering dibagi menjadi beberapa tingkatan.
-          'The Westward' memiliki visual yang sangat berbeda dari donghua pada umumnya.
-          Banyak donghua yang memiliki komunitas penggemar yang sangat aktif.
-          'A Will Eternal' dikenal dengan lelucon dan momen kocaknya.
-          Konsep 'takdir abadi' adalah tujuan tertinggi bagi banyak kultivator.
           EOF
           )
           echo "DONGHUA_FACT=$DONGHUA_FACT" >> $GITHUB_ENV
@@ -463,7 +358,7 @@ jobs:
             <b>• 🚶 JOURNEY_AT :</b> <code>${{ env.FORMATTED_TIME }}</code>
 
             <b>• 🧩 CULTIVATION_STAGE :</b> <code>${{ env.LEVEL_NAME }}</code>
-            <b>• 👤 IMMORTAL_NAME :</b> <code>beeexchanger.id@gmail.com</code>
+            <b>• 👤 IMMORTAL_NAME :</b> beeexchanger.id@gmail.com
 
             <b>🏆 <u>LEADERBOARD (TOP 10 GLOBAL)</u> 🏆</b>
             ━━━━━━━━━━━━━━━━━━━━━━
@@ -541,7 +436,7 @@ jobs:
           fi
 
           if [ "$user" == "null" ] || [ -z "$user" ]; then
-            msg="No contributors for this week."
+            msg="No contributors for this case."
           else
             msg="🏆 <b>Weekly Winner</b> (Period $week_start to $(date -u -d "$week_end -1 day" +%Y-%m-%d)):\n\n<b>$user</b> with <b>$score</b> levels!\n$badge"
           fi
